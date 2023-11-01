@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="domainsoftware1Flow" doc:id="906ad70f-2eee-443b-a251-35da76719bb9" >
+		<http:listener doc:name="Listener" doc:id="df055a81-ce98-4cb7-8736-68141bdd8851" config-ref="HTTP_Listener_config" path="/path1"/>
+		<set-payload value='#["resp from App1"]' doc:name="Set Payload" doc:id="910ea506-0fc5-429c-9449-827044666daa" />
+	</flow>
+</mule>
